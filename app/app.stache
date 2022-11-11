@@ -2,4 +2,10 @@
 
 <can-my-component></can-my-component>
 
+<div>
+    <a href="{{ routeUrl(page='home') }}">Home</a> |
+    <a href="{{ routeUrl(page='first') }}">First</a> |
+    <a href="{{ routeUrl(page='not-found') }}">404</a>
+</div>
+
 {{ component }}
