@@ -39,4 +39,4 @@ class App extends StacheElement {
   }
 }
 
-customElements.define('can-app', App)
+customElements.define('can-app', App);
