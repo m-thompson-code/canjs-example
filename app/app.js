@@ -7,4 +7,4 @@ class App extends StacheElement {
     static view = view;
 }
 
-customElements.define('can-app', App)
+customElements.define('can-app', App);
