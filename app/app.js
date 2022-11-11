@@ -6,6 +6,7 @@ import view from "./app.stache";
 import "./app.css";
 import "./my-component/my-component";
 import "./first/first";
+import "./second/second";
 
 route.urlData = new RoutePushstate();// "/#!first" -> "/first"
 route.register("{page}", { page: "home" });// Default value is "home"
@@ -30,6 +31,8 @@ class App extends StacheElement {
                 return home;
             case 'first':
                 return document.createElement('can-first');
+            case 'second':
+                return document.createElement('can-second');
             default:
                 const notFound = document.createElement('p');
                 notFound.innerHTML = '404: not found';
