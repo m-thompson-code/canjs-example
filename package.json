@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "node serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -25,5 +26,16 @@
     "steal-css": "^1.3.2",
     "steal-stache": "^5.0.0",
     "steal-tools": "^2.3.0"
+  },
+  "steal": {
+    "babelOptions": {
+      "plugins": [
+        "transform-class-properties"
+      ]
+    },
+    "plugins": [
+      "steal-css",
+      "steal-stache"
+    ]
   }
 }
