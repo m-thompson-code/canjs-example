@@ -6,4 +6,4 @@ class First extends StacheElement {
     static view = view;
 }
 
-customElements.define('can-first', First)
+customElements.define('can-first', First);
