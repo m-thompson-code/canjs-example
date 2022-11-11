@@ -1,3 +1,5 @@
 <p>app works!</p>
 
 <can-my-component></can-my-component>
+
+{{ component }}
