@@ -6,4 +6,4 @@ class MyComponent extends StacheElement {
     static view = view;
 }
 
-customElements.define('can-my-component', MyComponent)
+customElements.define('can-my-component', MyComponent);
