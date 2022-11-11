@@ -14,29 +14,28 @@ route.start();
 class App extends StacheElement {
     static view = view;
 
+    static props = {
+        routeData: {
+        get default() {
+            return route.data;
+        },
+        },
+    };
 
-  static props = {
-    routeData: {
-      get default() {
-        return route.data;
-      },
-    },
-  };
-
-  get component() {
-    switch (this.routeData.page) {
-      case 'home':
-        const home = document.createElement('p');
-        home.innerHTML = 'Home route';
-        return home;
-      case 'first':
-        return document.createElement('can-first');
-      default:
-        const notFound = document.createElement('p');
-        notFound.innerHTML = '404: not found';
-        return notFound;
+    get component() {
+        switch (this.routeData.page) {
+            case 'home':
+                const home = document.createElement('p');
+                home.innerHTML = 'Home route';
+                return home;
+            case 'first':
+                return document.createElement('can-first');
+            default:
+                const notFound = document.createElement('p');
+                notFound.innerHTML = '404: not found';
+                return notFound;
+        }
     }
-  }
 }
 
 customElements.define('can-app', App);
